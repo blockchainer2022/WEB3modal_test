@@ -120,7 +120,7 @@ function App() {
   const referalAddresses = "0xcf63f107969f02c4391a1e7c061853c5de20b7b9";
   const invest = () => {
     if (contract) {
-      if (chainId === "56") {
+      if (chainId === 56) {
         contract.methods
           .invest(referalAddresses, 0)
           .send({

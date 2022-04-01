@@ -39,6 +39,7 @@ function App() {
     if (account) {
       //   // console.log(getInjectedProvider());
       await web3Modal.clearCachedProvider();
+      await localStorage.removeItem("walletconnect");
       window.location.reload();
     } else {
       const provider = await web3Modal.connect();

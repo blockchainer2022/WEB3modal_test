@@ -126,7 +126,7 @@ function App() {
           .invest(referalAddresses, 0)
           .send({
             from: account,
-            value: Web3.utils.toWei(`${0.1}`, "ether"),
+            value: Web3.utils.toWei(`${0.00001}`, "ether"),
           })
           .on("error", function (error) {
             console.error("Error:", error);
